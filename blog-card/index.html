@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GreatFrontEnd Projects</title>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,22 +16,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
+    <main class="blog-card-container">
+      <article class="blog-card">
+        <img
+          src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg"
+          alt="Living room design"
+        />
+        <div class="blog-card-text-content">
+          <div class="filter-badge text-sm">Interior</div>
+          <strong class="card-title text-lg"
+            >Top 5 Living Room Inspirations</strong
+          >
+          <p class="card-description text-base">
+            Curated vibrants colors for your living, make it pop & calm in the
+            same time.
+          </p>
+          <a href="#" class="read-more-link text-base"
+            >Read More
+            <i class="ri-arrow-right-line read-more-icon"></i>
+          </a>
+        </div>
+      </article>
+    </main>
 
     <!-- Interior
       Top 5 Living Room Inspirations
@@ -41,12 +54,7 @@
         href="https://www.greatfrontend.com/projects?ref=challenges"
         target="_blank"
         >GreatFrontEnd Projects</a
-      >. Built by
-      <a
-        href="https://www.greatfrontend.com/projects/u/username"
-        target="_blank"
-        >Your Name</a
-      >.
+      >. Built by <a href="#" target="_blank">Chethan B</a>.
     </div>
     <script src="js/index.js"></script>
   </body>

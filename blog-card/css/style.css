@@ -1,19 +1,134 @@
-/* Put any custom CSS styles here.  */
-/* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --indigo: #4338ca;
+  --black: #171717;
+  --gray: #525252;
+  --green-dark: hsla(142, 72%, 29%, 1);
+  --green-light: #bbf7d0;
+  --green-lighter: #f0fdf4;
+
+  --background-gradient: linear-gradient(
+    147.52deg,
+    #f9fafb 8.89%,
+    #d2d6db 100.48%
+  );
+
+  /* Typography */
+  --font-size-sm: 0.875rem; /* 14px */
+  --line-height-sm: 1.1.25rem; /* 20px */
+  --font-size-base: 1rem; /* 16px */
+  --line-height-base: 1.5rem; /* 24px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --line-height-lg: 1.75rem; /* 28px */
+}
+
+.text-sm {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+}
+
+.text-base {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-lg);
+}
+
 body {
   margin: 0;
-  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  font-family: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   min-height: 100vh;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background: var(--background-gradient);
 }
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.blog-card-container {
+  display: grid;
+  place-content: center;
+  position: relative;
+  top: 120px;
+}
+
+.blog-card {
+  width: 340px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px 0px #0000001a;
+  overflow: hidden;
+}
+
+.blog-card-text-content {
+  padding: 24px 16px;
+  background-color: var(--white);
+}
+
+.filter-badge {
+  width: max-content;
+  background-color: var(--green-lighter);
+  color: var(--green-dark);
+  border: 1px solid var(--green-light);
+  border-radius: 9999px;
+  padding: 2px 8px;
+}
+
+.card-title {
+  font-weight: 600;
+  display: block;
+  margin-block: 8px 12px;
+}
+
+.card-description {
+  color: var(--gray);
+  margin-block: 0 24px;
+  font-weight: 500;
+}
+
+.read-more-link:hover i {
+  transform: translateX(2px);
+}
+
+.read-more-link:focus {
+  outline: 1px solid hsla(0, 0%, 100%, 1);
+  box-shadow: 0px 0px 0px 4px hsla(237, 77%, 59%, 0.12);
+  border-radius: 4px;
+}
+
+.read-more-link {
+  text-decoration: none;
+  color: var(--indigo);
+  font-weight: 500;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 2px;
+}
+
+.read-more-icon {
+  color: var(--indigo);
+  display: inline-block;
+  transition: transform ease 0.4s;
+  margin-left: 3px;
+  font-size: 1.125rem;
+  top: 1px;
+  position: relative;
 }
 
 .credits {
